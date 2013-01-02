@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GridViewProblem.DomainModel
 {
-    public class Person
+    public class Person : ITile
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -14,6 +14,16 @@ namespace GridViewProblem.DomainModel
         public override string ToString()
         {
             return string.Format("{0}, {1}", LastName, FirstName);
+        }
+
+        public string Title
+        {
+            get { return LastName; }
+        }
+
+        public string Subtitle
+        {
+            get { return FirstName; }
         }
     }
 }

@@ -39,10 +39,7 @@
             <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{StaticResource AppName}" Style="{StaticResource PageHeaderTextStyle}"/>
         </Grid>
 
-        <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <ListView ItemsSource="{Binding People}" Width="200" />
-            <ListView ItemsSource="{Binding Locations}" Width="200" />
-        </StackPanel>
+        <GridView Grid.Row="1" ItemsSource="{Binding People}" ItemTemplate="{StaticResource Standard250x250ItemTemplate}" />
         
         <VisualStateManager.VisualStateGroups>
 

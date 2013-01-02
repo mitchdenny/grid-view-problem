@@ -6,13 +6,23 @@ using System.Threading.Tasks;
 
 namespace GridViewProblem.DomainModel
 {
-    public class Location
+    public class Location : ITile
     {
         public string Description { get; set; }
 
         public override string ToString()
         {
             return Description;
+        }
+
+        public string Title
+        {
+            get { return Description; }
+        }
+
+        public string Subtitle
+        {
+            get { return Description; }
         }
     }
 }

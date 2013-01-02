@@ -18,6 +18,21 @@ namespace GridViewProblem
                 new Person() { FirstName = "Lisa", LastName = "Simpson" },
                 new Person() { FirstName = "Homer", LastName = "Simpson" },
                 new Person() { FirstName = "Marg", LastName = "Simpson" },
+                new Person() { FirstName = "Bart", LastName = "Simpson" },
+                new Person() { FirstName = "Montgomery", LastName = "Burns" },
+                new Person() { FirstName = "Lisa", LastName = "Simpson" },
+                new Person() { FirstName = "Homer", LastName = "Simpson" },
+                new Person() { FirstName = "Marg", LastName = "Simpson" },
+                new Person() { FirstName = "Bart", LastName = "Simpson" },
+                new Person() { FirstName = "Montgomery", LastName = "Burns" },
+                new Person() { FirstName = "Lisa", LastName = "Simpson" },
+                new Person() { FirstName = "Homer", LastName = "Simpson" },
+                new Person() { FirstName = "Marg", LastName = "Simpson" },
+                new Person() { FirstName = "Bart", LastName = "Simpson" },
+                new Person() { FirstName = "Montgomery", LastName = "Burns" },
+                new Person() { FirstName = "Lisa", LastName = "Simpson" },
+                new Person() { FirstName = "Homer", LastName = "Simpson" },
+                new Person() { FirstName = "Marg", LastName = "Simpson" },
                 new Person() { FirstName = "Bart", LastName = "Simpson" }
             };
 

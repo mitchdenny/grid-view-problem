@@ -17,7 +17,7 @@
     <Page.DataContext>
         <local:HubPageModel />
     </Page.DataContext>
-    
+
     <!--
         This grid acts as a root panel for the page that defines two rows:
         * Row 0 contains the back button and page title
@@ -38,9 +38,17 @@
             <Button x:Name="backButton" Click="GoBack" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
             <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{StaticResource AppName}" Style="{StaticResource PageHeaderTextStyle}"/>
         </Grid>
-
-        <GridView Grid.Row="1" ItemsSource="{Binding People}" ItemTemplate="{StaticResource Standard250x250ItemTemplate}" />
         
+        <Grid Grid.Row="1">
+            <ScrollViewer Style="{StaticResource HorizontalScrollViewerStyle}">
+                <StackPanel Orientation="Horizontal">
+                    <GridView ItemsSource="{Binding People}" ItemTemplate="{StaticResource Standard250x250ItemTemplate}" />
+                    <GridView ItemsSource="{Binding Locations}" ItemTemplate="{StaticResource Standard250x250ItemTemplate}" />
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+
+
         <VisualStateManager.VisualStateGroups>
 
             <!-- Visual states reflect the application's view state -->

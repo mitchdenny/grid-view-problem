@@ -33,7 +33,6 @@ namespace GridViewProblem
                 new Person() { FirstName = "Lisa", LastName = "Simpson" },
                 new Person() { FirstName = "Homer", LastName = "Simpson" },
                 new Person() { FirstName = "Marg", LastName = "Simpson" },
-                new Person() { FirstName = "Bart", LastName = "Simpson" }
             };
 
             Locations = new ObservableCollection<Location>()
@@ -41,7 +40,6 @@ namespace GridViewProblem
                 new Location() { Description = "Nuclear Power Plant" },
                 new Location() { Description = "Moe's Tavern" },
                 new Location() { Description = "Springfield Elementary" },
-                new Location() { Description = "Shelbyville" }
             };
         }
 

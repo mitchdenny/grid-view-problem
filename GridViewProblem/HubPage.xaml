@@ -39,6 +39,11 @@
             <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{StaticResource AppName}" Style="{StaticResource PageHeaderTextStyle}"/>
         </Grid>
 
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <ListView ItemsSource="{Binding People}" Width="200" />
+            <ListView ItemsSource="{Binding Locations}" Width="200" />
+        </StackPanel>
+        
         <VisualStateManager.VisualStateGroups>
 
             <!-- Visual states reflect the application's view state -->
